@@ -1,0 +1,30 @@
+{
+  "name": "school-management",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "build": "nodemon backend/server.js",
+    "start": "nodemon backend/server.js"
+  },
+  "keywords": [
+      "School Management",
+      "Educational Websites",
+      "Created By Ghs Julian"
+      ],
+  "author": "Ghs Julian",
+  "license": "ISC",
+  "description": "This is a full stack project which has developed to manage school and students.",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

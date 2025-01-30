@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #000000;
+    padding: 1rem;
+    position: relative;
+}
+.f-1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-radius: 50%;
+    transform: rotate(405deg);
+    margin-top: 5px;
+    right: 2px;
+    margin-right: 8px;
+}
+.f-2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-top: 2px solid #fff;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid #fff;
+    border-radius: 50%;
+    transform: rotate(300deg);
+}
