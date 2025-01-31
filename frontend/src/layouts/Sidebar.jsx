@@ -9,7 +9,7 @@ const Sidebar = () => {
                 <img src="./icons/dashboard.png" alt="User Profile" />
                 <span>Admin Dashboard </span>
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/admin-profile">
                 <img src="./icons/profile.png" alt="User Profile" />
                 <span>Admin Profile </span>
             </NavLink>
@@ -23,7 +23,7 @@ const Sidebar = () => {
                 <span>Add Student </span>
             </NavLink>
             <NavLink to="/add-teacher">
-                <img src="./icons/add-student-2.png" alt="User Profile" />
+                <img src="./icons/add-teacher.png" alt="User Profile" />
                 <span>Add Teacher </span>
             </NavLink>
             <NavLink to="/">

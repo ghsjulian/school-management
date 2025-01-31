@@ -1,0 +1,130 @@
+/*--> Admin Profile <--*/
+:root {
+    --txt: #464b4c;
+}
+.admin-profile {
+    width: 97%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    grid-gap: 20px;
+}
+.admin-profile .edit-profile {
+    padding: 1rem 0.5rem;
+    background: var(--white);
+    border-radius: 5px;
+    border: 0.1px solid #d8dcd9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.view-profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--login-h3);
+    padding: 0.3rem;
+    margin: 0.3rem auto;
+}
+.view-profile {
+    padding: 1rem 0.5rem;
+    background: var(--white);
+    border-radius: 5px;
+    border: 0.1px solid #d8dcd9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.view-profile .admin-info {
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.admin-info .flex-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 0 0.5rem;
+    text-align: justify;
+}
+.admin-info .flex-info p {
+    width: 100%;
+    color: var(--txt);
+    font-weight: 600;
+    margin: 0.7rem 0;
+    font-size: 17px;
+    text-align: left;
+    text-wrap: normal;
+    word-wrap: break-word;
+}
+
+.edit-profile h2,
+.view-profile h2 {
+    text-align: center;
+    color: var(--login-h3);
+    margin: 0.7rem auto;
+}
+.edit-profile #info-message {
+    text-align: center;
+    width: 80%;
+    margin: 0.7rem auto;
+}
+.edit-profile .user-photo {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 0.1px solid var(--text);
+    display: flex;
+    margin: 0.5rem auto;
+}
+.user-photo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+.user-photo label {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white);
+    background: #007a1f;
+    font-weight: 900;
+    font-size: 25px;
+    z-index: 90000;
+}
+.edit-profile input {
+    outline: none;
+    border: 1px solid var(--login-h3);
+    border-radius: 5px;
+    padding: 0.9rem 1rem;
+    margin: 0.7rem 0;
+    width: 80%;
+}
+.edit-profile button {
+    outline: none;
+    border: none;
+    background: var(--login-h3);
+    padding: 0.7rem 1rem;
+    width: 80%;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 0.5rem auto;
+}

@@ -9,7 +9,7 @@ const Dashboard = () => {
                         <img src="./icons/report.png" alt="Report" />
                         <h4>Student Statics</h4>
                     </NavLink>
-                    <NavLink className="grid-item" to="/">
+                    <NavLink className="grid-item" to="/admin-profile">
                         <img src="./icons/profile.png" alt="User Profile" />
                         <h4>Admin Profile </h4>
                     </NavLink>

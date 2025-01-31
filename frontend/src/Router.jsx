@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import AdminLogin from "./pages/AdminLogin";
 import AddStudent from "./pages/AddStudent";
 import AddTeacher from "./pages/AddTeacher";
+import AdminProfile from "./pages/AdminProfile";
 
 const myRoutes = [
     {
@@ -24,6 +25,10 @@ const myRoutes = [
             {
                 path: "/add-teacher",
                 element: <AddTeacher />
+            },
+            {
+                path : "/admin-profile",
+                element : <AdminProfile/>
             }
         ]
     },

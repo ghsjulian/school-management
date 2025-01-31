@@ -26,17 +26,10 @@ const AddTeacher = () => {
                         <label htmlFor="phone">Phone Number : </label>
                         <input id="phone" type="telephone" />
                     </div>
-                    <div className="input">
-                        <label htmlFor="rool">Teacher Rool : </label>
-                        <input id="rool" type="number" />
-                    </div>
+                   
                     <div className="input">
                         <label htmlFor="gender">Teacher Gender : </label>
                         <input id="gender" type="text" />
-                    </div>
-                    <div className="input">
-                        <label htmlFor="class">Teacher Class : </label>
-                        <input id="class" type="text" />
                     </div>
                     <div className="input">
                         <label htmlFor="father-name">Father's Name : </label>

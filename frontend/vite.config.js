@@ -10,7 +10,9 @@ export default defineConfig(({ mode }) => {
       'process.env': env,
     },
     server : {
-        port : 5000
+        port : 5000,
+        allowedHosts:'all',
+        strictPort: true,
     }
   };
 });

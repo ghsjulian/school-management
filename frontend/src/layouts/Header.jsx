@@ -14,11 +14,12 @@ const Header = () => {
             <header>
                 <div className="logo">School-Management</div>
                 <div className="desk-top">
-                    <NavLink to="/">
+                    <NavLink to="/admin-profile">
                         <img src="./icons/profile.png" alt="User Profile" />
                     </NavLink>
                     <NavLink to="/">
                         <img src="./icons/bell.png" alt="User Notification" />
+                        <span>4</span>
                     </NavLink>
                     <NavLink to="/">
                         <img src="./icons/logout.png" alt="User Logout" />

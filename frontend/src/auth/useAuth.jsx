@@ -12,7 +12,8 @@ export const api = import.meta.env.VITE_API_URL;
 // Initial state
 const initialState = {
     isLogin: false,
-    user: null
+    user: null,
+    token : null
 };
 // Action types
 const LOGIN = "LOGIN";

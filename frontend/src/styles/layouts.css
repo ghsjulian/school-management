@@ -65,6 +65,7 @@ header .desk-top {
 header .desk-top a {
     text-decoration: none;
     color: var(--link);
+    position: relative;
 }
 header .desk-top a img {
     width: 30px;
@@ -135,6 +136,22 @@ aside a:hover {
 aside a small {
     position: absolute;
     right: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #00a41d;
+    color: var(--white);
+    font-weight: 900;
+    border-radius: 50%;
+    border: 0.1px solid var(--white);
+}
+header .desk-top a span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
     width: 25px;
     height: 25px;
     display: flex;
@@ -287,7 +304,7 @@ main {
     color: var(--white);
     font-weight: 900;
     font-size: 18px;
-    transition: .3s ease-in;
+    transition: 0.3s ease-in;
 }
 .container .submit-form:hover {
     background: var(--login-btn-hover);
@@ -343,7 +360,7 @@ main {
         left: 0;
         right: 0;
         top: 0;
-        background: rgba(0, 27, 32, 0.495);
+        background: rgba(0, 5, 6, 0.652);
         opacity: 0.7;
         z-index: 9000;
         transition: 1s opacity;
