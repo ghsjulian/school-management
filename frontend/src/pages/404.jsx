@@ -6,8 +6,8 @@ const NotFound = () => {
         <div className="full-container">
             <img
                 style={{
-                    width: "90%",
-                    height: "auto",
+                    width: "70%",
+                    height: "70%",
                     objectFit: "contain"
                 }}
                 src="./icons/404.png"
@@ -36,7 +36,7 @@ const NotFound = () => {
                         margin: "0 1rem"
                     }}
                 >
-                   Error : Page Not Found
+                    Error : Page Not Found
                 </h1>
             </div>
         </div>

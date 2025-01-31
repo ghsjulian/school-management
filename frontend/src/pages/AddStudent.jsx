@@ -51,6 +51,10 @@ const AddStudent = () => {
                         <input id="dept" type="text" />
                     </div>
                     <div className="input">
+                        <label htmlFor="date">Student DOB : </label>
+                        <input id="date" type="date" />
+                    </div>
+                    <div className="input">
                         <label htmlFor="school-name">School's Name: </label>
                         <input id="school-name" type="text" />
                     </div>

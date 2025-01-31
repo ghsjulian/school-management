@@ -128,3 +128,63 @@
     border-radius: 5px;
     margin: 0.5rem auto;
 }
+/*-->Admin Notification Styling<--*/
+.notification-page {
+    max-width: 75%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    background: var(--white);
+    margin: 0.5rem auto;
+    border-radius: 5px;
+}
+.notification-page h2 {
+    text-align: center;
+    margin: 0.3rem auto;
+    padding: 0.5rem 0;
+    font-size: 20px;
+    color: var(--login-h3);
+}
+.notification-page .container {
+    width: 100%;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.notification-page .container .msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 1rem 0;
+    padding: 0.6rem 0;
+    border-bottom: 2px solid #c4cacc72;
+}
+.msg img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.3rem;
+    border: 0.1px solid var(--login-h3);
+}
+.msg p {
+    font-size: 17px;
+    word-break: break-word;
+    line-break: auto;
+}
+.msg p strong {
+    color: var(--login-h3);
+    margin: 0 0.5rem;
+}
+/*--> Responsive Styling <--*/
+@media (max-width: 768px) {
+    .notification-page {
+        max-width: 96%;
+        height: 82vh;
+    }
+    .notification-page .container {
+        height: 83vh;
+    }
+}

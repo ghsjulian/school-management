@@ -17,7 +17,7 @@ const Header = () => {
                     <NavLink to="/admin-profile">
                         <img src="./icons/profile.png" alt="User Profile" />
                     </NavLink>
-                    <NavLink to="/">
+                    <NavLink to="/notification">
                         <img src="./icons/bell.png" alt="User Notification" />
                         <span>4</span>
                     </NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
                 </button>
             </header>
             <div ref={navRef} className={isOpen && "side-bar-on"}>
-                <Sidebar />
+                <Sidebar  openNav={openNav}/>
             </div>
             {isOpen && <div onClick={openNav} className="overly"></div>}
         </>

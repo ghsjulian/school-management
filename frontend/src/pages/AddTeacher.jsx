@@ -26,7 +26,7 @@ const AddTeacher = () => {
                         <label htmlFor="phone">Phone Number : </label>
                         <input id="phone" type="telephone" />
                     </div>
-                   
+
                     <div className="input">
                         <label htmlFor="gender">Teacher Gender : </label>
                         <input id="gender" type="text" />
@@ -40,8 +40,18 @@ const AddTeacher = () => {
                         <input id="mother-name" type="text" />
                     </div>
                     <div className="input">
-                        <label htmlFor="dept">Teacher Department : </label>
-                        <input id="dept" type="text" />
+                        <label htmlFor="qualification">
+                            Teacher Qualifications :{" "}
+                        </label>
+                        <input id="qualification" type="text" />
+                    </div>
+                    <div className="input">
+                        <label htmlFor="nid">Teacher NID : </label>
+                        <input id="nid" type="text" />
+                    </div>
+                    <div className="input">
+                        <label htmlFor="date">Teacher DOB : </label>
+                        <input id="date" type="date" />
                     </div>
                     <div className="input">
                         <label htmlFor="school-name">School's Name: </label>

@@ -7,6 +7,7 @@ import AdminLogin from "./pages/AdminLogin";
 import AddStudent from "./pages/AddStudent";
 import AddTeacher from "./pages/AddTeacher";
 import AdminProfile from "./pages/AdminProfile";
+import Notification from "./pages/Notification";
 
 const myRoutes = [
     {
@@ -29,6 +30,10 @@ const myRoutes = [
             {
                 path : "/admin-profile",
                 element : <AdminProfile/>
+            },
+            {
+               path : "/notification",
+               element : <Notification/>
             }
         ]
     },
