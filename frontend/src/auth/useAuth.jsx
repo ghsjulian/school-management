@@ -54,7 +54,7 @@ export const AuthProvider = ({ children }) => {
     const api = import.meta.env.VITE_API_URL;
     
     
-    const login = userDetails => {
+    const setLogin = userDetails => {
         dispatch({ type: LOGIN, payload: userDetails });
     };
 
@@ -65,10 +65,13 @@ export const AuthProvider = ({ children }) => {
     const getUser = () => {
         return state.user;
     };
+    const getToken = () => {
+        return state.token;
+    };
 
     return (
         <AuthContext.Provider
-            value={{ state, login, logout, getUser,api, isLogin}}
+            value={{ state, setLogin, logout, getUser,getToken,api, isLogin}}
         >
             {children}
         </AuthContext.Provider>

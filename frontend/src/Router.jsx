@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
 
+import AdminProtector from "./protection/AdminProtector";
 import NotFound from "./pages/404";
 import Layout from "./layouts/Layout";
 import Dashboard from "./pages/Dashboard";
@@ -12,28 +13,36 @@ import Notification from "./pages/Notification";
 const myRoutes = [
     {
         path: "/",
-        element: <Layout />,
+        element: (
+            <AdminProtector>
+                <Layout />
+            </AdminProtector>
+        ),
         children: [
             {
                 index: true,
                 path: "",
-                element: <Dashboard />
+                element: (
+                    <AdminProtector>
+                        <Dashboard />
+                    </AdminProtector>
+                )
             },
             {
                 path: "/add-student",
-                element: <AddStudent />
+                element: <AdminProtector><AddStudent /></AdminProtector>
             },
             {
                 path: "/add-teacher",
-                element: <AddTeacher />
+                element: <AdminProtector><AddTeacher /></AdminProtector>
             },
             {
-                path : "/admin-profile",
-                element : <AdminProfile/>
+                path: "/admin-profile",
+                element: <AdminProtector><AdminProfile /></AdminProtector>
             },
             {
-               path : "/notification",
-               element : <Notification/>
+                path: "/notification",
+                element: <AdminProtector><Notification /></AdminProtector>
             }
         ]
     },

@@ -2,9 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../styles/login.css";
 import { useAuth } from "../auth/useAuth";
+import useLogin from "../hooks/useLogin";
 
 const AdminLogin = () => {
     const { getUser, login, api } = useAuth();
+    const { adminLogin, isLoadin } = useLogin();
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
     const [isLoading, setLoading] = useState(false);
@@ -50,7 +52,7 @@ const AdminLogin = () => {
         txtRef.current.textContent = "Processing...";
         loader.current.classList.add("load");
         try {
-            const request = await fetch(`${api}/admin/login`, {
+            const request = await fetch(`${api}/admin/auth/login`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(user)
@@ -60,8 +62,9 @@ const AdminLogin = () => {
                 txtRef.current.textContent = "Login Success";
                 showMessage(response.message, true);
                 loader.current.classList.remove("load");
-                login(response.user);
-                navigate("/");
+
+                //login(response.user);
+                //navigate("/");
                 // window.location.reload();
             } else {
                 txtRef.current.textContent = "Login Now";
@@ -80,7 +83,7 @@ const AdminLogin = () => {
             setLoading(false);
         }
     };
-    const LoginNow = e => {
+    const LoginNow = async(e) => {
         e.preventDefault();
         // Create Validation And Conditions
         if (email.trim() === "" && password.trim() === "") {
@@ -109,7 +112,14 @@ const AdminLogin = () => {
             passwordRef.current.focus();
             showMessage("Password Will Be 6<", false);
         } else {
-            SendToServer(email.trim(), password.trim());
+            //SendToServer(email.trim(), password.trim());
+            const response = await adminLogin({ email, password });
+            if (response.type) {
+                showMessage(true, response.message);
+                //navigate("/")
+            } else {
+                showMessage(false, response.message);
+            }
         }
     };
 

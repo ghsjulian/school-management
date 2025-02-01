@@ -8,10 +8,10 @@
     "start": "nodemon backend/server.js"
   },
   "keywords": [
-      "School Management",
-      "Educational Websites",
-      "Created By Ghs Julian"
-      ],
+    "School Management",
+    "Educational Websites",
+    "Created By Ghs Julian"
+  ],
   "author": "Ghs Julian",
   "license": "ISC",
   "description": "This is a full stack project which has developed to manage school and students.",
